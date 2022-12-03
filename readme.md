@@ -27,7 +27,7 @@ const rpcDispatch = createClient({
 default export rpcDispatch
 ```
 
-Then assuming your server is setup with `simplerpc-server` at the specific endpoint you can make rpc calls like so.
+Then assuming your server is setup with `@alexmerced/simplerpc-server` at the specific endpoint you can make rpc calls like so.
 
 ```js
 await rpcDispatch({type: "createTodo", payload: {

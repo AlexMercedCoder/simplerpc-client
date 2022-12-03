@@ -1,15 +1,15 @@
 export function createClient(config){
     if (!config){
-        throw "ERROR: No Config object passed"
+        throw "ERROR**** No Config object passed"
     }
 
     if (!config.url){
-        throw "ERROR: config object does not have url property"
+        throw "ERROR**** config object does not have url property"
     }
 
     return async (action) => {
         if (!action.type){
-            throw "ERROR: action does not have type property"
+            throw "ERROR**** action does not have type property"
         }
 
         const type = action.type

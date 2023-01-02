@@ -18,6 +18,6 @@ export interface SimpleRPCClientConfig {
 
 export type SimpleRPCClient = (action: DispatchArg) => Promise<SimpleRPCResponse>;
 
-declare function createClient(config: SimpleRPCClientConfig): SimpleRPCClient;
+export declare function createClient(config: SimpleRPCClientConfig): SimpleRPCClient;
 
-export default createClient;
+

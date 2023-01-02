@@ -2,7 +2,7 @@ export interface UnknownObjectShape {
   [key: string]: any;
 }
 
-export interface ActionArg {
+export interface DispatchArg {
   type: string;
   payload: UnknownObjectShape;
 }
@@ -16,7 +16,7 @@ export interface SimpleRPCClientConfig {
   headers: UnknownObjectShape;
 }
 
-export type SimpleRPCClient = (action: ActionArg) => Promise<SimpleRPCResponse>;
+export type SimpleRPCClient = (action: DispatchArg) => Promise<SimpleRPCResponse>;
 
 declare function createClient(config: SimpleRPCClientConfig): SimpleRPCClient;
 

@@ -13,7 +13,7 @@ export interface SimpleRPCResponse {
 
 export interface SimpleRPCClientConfig {
   url: string;
-  headers: UnknownObjectShape;
+  headers?: UnknownObjectShape;
 }
 
 export type SimpleRPCClient = (action: DispatchArg) => Promise<SimpleRPCResponse>;
